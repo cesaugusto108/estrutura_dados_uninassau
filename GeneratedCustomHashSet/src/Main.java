@@ -41,7 +41,7 @@ public class Main {
                 .out
                 .println("\nQuantidade impressa no console: " + list.size() + "\n");
 
-        int rowSize = 25;
+        int rowSize = 30;
         for (int i = 0; i < list.size(); i++) {
             if (i >= rowSize && i % rowSize == 0) {
                 System
