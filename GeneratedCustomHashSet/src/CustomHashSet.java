@@ -6,7 +6,7 @@ public class CustomHashSet {
 
     public CustomHashSet() {
         this
-                .hashSet = new HashSet<>();
+            .hashSet = new HashSet<>();
     }
 
     public HashSet<String> getHashSet() {
@@ -16,11 +16,11 @@ public class CustomHashSet {
 
     public void add(String string) {
         hashSet
-                .add(string);
+                .add("º" + string);
     }
 
     public void remove(String string) {
         hashSet
-                .remove(string);
+                .remove("º" + string);
     }
 }

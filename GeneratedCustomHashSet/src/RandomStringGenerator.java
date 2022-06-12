@@ -7,17 +7,24 @@ public class RandomStringGenerator {
         return new String(asciiCode, 0, asciiCode.length);
     }
 
+    private static int generateAsciiCode() {
+
+        return (int)
+                Math
+                    .floor(Math.random() * 93) + 33;
+    }
+
     public static String generateRandomString(int size) {
         String[] randomStr = new String[size];
 
-        int asciiCode = (int) Math.floor(Math.random() * 93) + 33;
-
-        Arrays.fill(randomStr, returnFromAscii(asciiCode));
+        for (int i = 0; i < randomStr.length; i++) {
+            randomStr[i] = returnFromAscii(generateAsciiCode());
+        }
 
         StringBuilder str = new StringBuilder();
         for (String s : randomStr) {
             str
-                    .append(s);
+                .append(s);
         }
 
         return str
