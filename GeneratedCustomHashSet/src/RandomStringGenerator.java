@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class RandomStringGenerator {
 
     private static String returnFromAscii(int... asciiCode) {
